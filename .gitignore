@@ -1,5 +1,5 @@
 .idea/
-js/
+js/bootstrap*
 css/*.map
 css/*grid*
 css/*reboot*
