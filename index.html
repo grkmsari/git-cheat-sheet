@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>kopya kağıdı</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body style="font-size: 12px;">
+<div class="container">
+    <!--<div class="row">-->
+        <!--<div class="col">-->
+            <!--Basic terminology about Git. <br>-->
+            <!--Repository: A container that stores all files and changes.-->
+        <!--</div>-->
+    <!--</div>-->
+    <div class="row">
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-1">
+            <div class="card">
+                <div class="card-body p-0">
+                    <h6 class="card-header font-weight-bold bg-info text-white text-center py-1">Repository</h6>
+                    <dl class="m-2">
+                        <dt><samp>git init [<em>directory</em>]</samp></dt>
+                        <dd class="text-right small">create repo in current folder or given directory</dd>
+                        <dt><samp>git clone <em>url</em> [<em>new-dir</em>]</samp></dt>
+                        <dd class="text-right small">clone repo from <i>url</i> to <i>new-dir</i></dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-1">
+            <div class="card">
+                <div class="card-body p-0">
+                    <h6 class="card-header font-weight-bold bg-success text-white text-center py-1">View</h6>
+                    <dl class="m-2">
+                        <dt><samp>git log [--oneline] [--stat]</samp></dt>
+                        <dd class="text-right small">lists commits in oneline style with stats</dd>
+                        <dt><samp>git log [-p | --patch] [-w]</samp></dt>
+                        <dd class="text-right small">lists commits and shows changes in files with ignoring
+                            whitespaces
+                        </dd>
+                        <dt><samp>git log [--graph] [--all]</samp></dt>
+                        <dd class="text-right small">shows a graph for current branch or all branches</dd>
+                        <dt><samp>git show [<em>id</em>] [--stat] [-p] [-w]</samp></dt>
+                        <dd class="text-right small">shows commit info and changes in files with ignoring whitespaces</dd>
+                        <dt><samp>git diff [<em>old</em> <em>new</em>]</samp></dt>
+                        <dd class="text-right small">shows differences between last commit and staging area or given files/commits</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-1">
+            <div class="card">
+                <div class="card-body p-0">
+                    <h6 class="card-header font-weight-bold bg-warning text-white text-center py-1">Commit</h6>
+                    <dl class="m-2">
+                        <dt><samp>git add <em>file</em></samp></dt>
+                        <dd class="text-right small">adds specified file to staging area</dd>
+                        <dt><samp>git add .</samp></dt>
+                        <dd class="text-right small">adds all files to staging area</dd>
+                        <dt><samp>git commit [-a] [-m "<em>message</em>"]</samp></dt>
+                        <dd class="text-right small">makes a commit with staging area files or all files and set commit message</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-1">
+            <div class="card">
+                <div class="card-body p-0">
+                    <h6 class="card-header font-weight-bold bg-primary text-white text-center py-1">Branch</h6>
+                    <dl class="m-2">
+                        <dt><samp>git add <em>file</em></samp></dt>
+                        <dd class="text-right small">adds specified file to staging area</dd>
+                        <dt><samp>git add .</samp></dt>
+                        <dd class="text-right small">adds all files to staging area</dd>
+                        <dt><samp>git commit [-a] [-m "<em>message</em>"]</samp></dt>
+                        <dd class="text-right small">makes a commit with staging area files or all files and set commit message</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
