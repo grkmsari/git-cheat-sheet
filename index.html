@@ -22,12 +22,26 @@
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-1">
             <div class="card">
                 <div class="card-body p-0">
+                    <h6 class="card-header font-weight-bold bg-info text-white text-center py-1">Basic</h6>
+                    <dl class="m-2">
+                        <dt><samp><em>master</em></samp></dt>
+                        <dd class="text-right small">very common branch name</dd>
+                        <dt><samp><em>origin</em></samp></dt>
+                        <dd class="text-right small">very common remote name</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-1">
+            <div class="card">
+                <div class="card-body p-0">
                     <h6 class="card-header font-weight-bold bg-info text-white text-center py-1">Repository</h6>
                     <dl class="m-2">
                         <dt><samp>git init [<em>directory</em>]</samp></dt>
                         <dd class="text-right small">create repo in current folder or given directory</dd>
                         <dt><samp>git clone <em>url</em> [<em>new-dir</em>]</samp></dt>
-                        <dd class="text-right small">clone repo from <i>url</i> to <i>new-dir</i></dd>
+                        <dd class="text-right small">clone repo from <em>url</em> to <em>new-dir</em></dd>
                     </dl>
                 </div>
             </div>
@@ -74,6 +88,22 @@
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-1">
             <div class="card">
                 <div class="card-body p-0">
+                    <h6 class="card-header font-weight-bold bg-danger text-white text-center py-1">Checkout</h6>
+                    <dl class="m-2">
+                        <dt><samp>git checkout <em>id</em></samp></dt>
+                        <dd class="text-right small">checkout to specified commit</dd>
+                        <dt><samp>git checkout <em>id</em> <em>file</em></samp></dt>
+                        <dd class="text-right small">checkout to specified file in commit</dd>
+                        <dt><samp>git checkout HEAD <em>file</em></samp></dt>
+                        <dd class="text-right small">go back to last version of file</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-1">
+            <div class="card">
+                <div class="card-body p-0">
                     <h6 class="card-header font-weight-bold bg-primary text-white text-center py-1">Branch</h6>
                     <dl class="m-2">
                         <dt><samp>git branch</samp></dt>
@@ -104,6 +134,8 @@
                 <div class="card-body p-0">
                     <h6 class="card-header font-weight-bold bg-info text-white text-center py-1">Undo</h6>
                     <dl class="m-2">
+                        <dt><samp>git revert <em>id</em> </samp></dt>
+                        <dd class="text-right small">undo changes in specified commit and creates a commit</dd>
                         <dt><samp>git reset [--hard | --soft] <em>id</em> </samp></dt>
                         <dd class="text-right small">removes commits after given id</dd>
                     </dl>
