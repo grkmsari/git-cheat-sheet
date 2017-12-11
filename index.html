@@ -76,12 +76,36 @@
                 <div class="card-body p-0">
                     <h6 class="card-header font-weight-bold bg-primary text-white text-center py-1">Branch</h6>
                     <dl class="m-2">
-                        <dt><samp>git add <em>file</em></samp></dt>
-                        <dd class="text-right small">adds specified file to staging area</dd>
-                        <dt><samp>git add .</samp></dt>
-                        <dd class="text-right small">adds all files to staging area</dd>
-                        <dt><samp>git commit [-a] [-m "<em>message</em>"]</samp></dt>
-                        <dd class="text-right small">makes a commit with staging area files or all files and set commit message</dd>
+                        <dt><samp>git branch</samp></dt>
+                        <dd class="text-right small">lists branches and shows active one</dd>
+                        <dt><samp>git branch [-b] <em>branch-name</em></samp></dt>
+                        <dd class="text-right small">creates branch with given name and switches to it</dd>
+                        <dt><samp>git branch [-d] <em>branch-name</em></samp></dt>
+                        <dd class="text-right small">deletes branch with given name</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-1">
+            <div class="card">
+                <div class="card-body p-0">
+                    <h6 class="card-header font-weight-bold bg-danger text-white text-center py-1">Remote</h6>
+                    <dl class="m-2">
+                        <dt><samp>git push [-f] <em>origin</em> <em>master</em></samp></dt>
+                        <dd class="text-right small">pushes master branch to origin branch with force</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-1">
+            <div class="card">
+                <div class="card-body p-0">
+                    <h6 class="card-header font-weight-bold bg-info text-white text-center py-1">Undo</h6>
+                    <dl class="m-2">
+                        <dt><samp>git reset [--hard | --soft] <em>id</em> </samp></dt>
+                        <dd class="text-right small">removes commits after given id</dd>
                     </dl>
                 </div>
             </div>
