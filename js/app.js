@@ -4,3 +4,7 @@ $( document ).ready(function() {
     });
 });
 
+function randomBg() {
+    bgArr = ["bg-primary", "bg-info", "bg-danger"];
+    return bgArr[1];
+}

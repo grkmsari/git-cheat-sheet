@@ -64,6 +64,12 @@
                         <dd class="text-right small">shows commit info and changes in files with ignoring whitespaces</dd>
                         <dt><samp>git diff [<em>old</em> <em>new</em>]</samp></dt>
                         <dd class="text-right small">shows differences between last commit and staging area or given files/commits</dd>
+                        <dt><samp>git shortlog [-s] [-n]</samp></dt>
+                        <dd class="text-right small">shows all commits sorted by author. -s only number of commits, -n sort by number</dd>
+                        <dt><samp>git log [--author="<em>name</em>"]</samp></dt>
+                        <dd class="text-right small">displays only name's commits</dd>
+                        <dt><samp>git log [--grep="<em>keyword</em>"]</samp></dt>
+                        <dd class="text-right small">searchs keyword in commit description</dd>
                     </dl>
                 </div>
             </div>
@@ -96,6 +102,8 @@
                         <dd class="text-right small">checkout to specified file in commit</dd>
                         <dt><samp>git checkout HEAD <em>file</em></samp></dt>
                         <dd class="text-right small">go back to last version of file</dd>
+                        <dt><samp>git checkout -b <em>new-branch</em></samp></dt>
+                        <dd class="text-right small">creates branch and checkout it</dd>
                     </dl>
                 </div>
             </div>
@@ -107,8 +115,8 @@
                     <h6 class="card-header font-weight-bold bg-primary text-white text-center py-1">Branch</h6>
                     <dl class="m-2">
                         <dt><samp>git branch</samp></dt>
-                        <dd class="text-right small">lists branches and shows active one</dd>
-                        <dt><samp>git branch [-b] <em>branch-name</em></samp></dt>
+                        <dd class="text-right small">display branches and active one</dd>
+                        <dt><samp>git branch <em>branch-name</em></samp></dt>
                         <dd class="text-right small">creates branch with given name and switches to it</dd>
                         <dt><samp>git branch [-d] <em>branch-name</em></samp></dt>
                         <dd class="text-right small">deletes branch with given name</dd>
@@ -122,8 +130,32 @@
                 <div class="card-body p-0">
                     <h6 class="card-header font-weight-bold bg-danger text-white text-center py-1">Remote</h6>
                     <dl class="m-2">
-                        <dt><samp>git push [-f] <em>origin</em> <em>master</em></samp></dt>
-                        <dd class="text-right small">pushes master branch to origin branch with force</dd>
+                        <dt><samp>git remote add <em>remote_name</em> <em>remote_url</em></samp></dt>
+                        <dd class="text-right small">adds remote url to repository</dd>
+                        <dt><samp>git remote rename <em>old</em> <em>new</em></samp></dt>
+                        <dd class="text-right small">rename remotes</dd>
+                        <dt><samp>git remote -v</samp></dt>
+                        <dd class="text-right small">displays shortnames and urls</dd>
+                        <dt><samp>git push [-f] [-u] <em>remote_name</em> <em>branch</em></samp></dt>
+                        <dd class="text-right small">pushes local branch to remote with force</dd>
+                        <dt><samp>git pull <em>remote_name</em> <em>branch</em></samp></dt>
+                        <dd class="text-right small">pulls remote branch to local and makes fast-forward merge</dd>
+                        <dt><samp>git fetch <em>remote</em> <em>branch</em></samp></dt>
+                        <dd class="text-right small">pulls remote commits to local</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-1">
+            <div class="card">
+                <div class="card-body p-0">
+                    <h6 class="card-header font-weight-bold bg-info text-white text-center py-1">Merge</h6>
+                    <dl class="m-2">
+                        <dt><samp>git merge <em>branch</em> </samp></dt>
+                        <dd class="text-right small">merges specified branch into current</dd>
+                        <dt><samp>git merge <em>origin/master</em> </samp></dt>
+                        <dd class="text-right small">after fetch</dd>
                     </dl>
                 </div>
             </div>
